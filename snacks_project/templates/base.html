@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{
+        background: url(https://wallpaperaccess.com/full/4420179.jpg),no-repeat
+    }
+
+    a{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    </style>
+    <title>Majed's snacks</title>
+</head>
+<body>
+    
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'aboutus' %}">AboutUs</a>
+    </nav>
+    {% block content %}
+    
+    {% endblock %}
+    
+</body>
+</html>
